@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>tugas form pekan 3 hasna</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="form registrasi siswa.html" method="POST">
+            <fieldset style="background-color: rgb(210, 232, 240);">
+                <legend style="text-align: center;"><h2>Form Registrasi Siswa</h2></legend>
+                <div>
+                    <h4>Informasi Pribadi</h4>
+                    <ul>
+                        <li>
+                            <label for="Nama_Awal">Nama Awal  :   </label>
+                            <div>
+                                <input id="Nama_Awal" type="text" name="Nama_Awal" required>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="Nama_Akhir">Nama Akhir   :   </label>
+                            <div>
+                                <input id="Nama_Akhir" type="text" name="Nama_Akhir" required>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="jk">Jenis Kelamin  :   </label>
+                            <div>
+                                <input type="radio" id="jk" name="jk">
+                                <label for="jk">L</label>
+                                <input type="radio" id="jk" name="jk">
+                                <label for="jk">P</label>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="Tempat_lahir">Tempat Lahir  :   </label>
+                            <input id="Tempat_lahir" type="text" name="Tempat_lahir">
+                        </li>
+                        <li>
+                            <label for="Tanggal_lahir">Tanggal Lahir  :   </label>
+                            <div>
+                                <input id="Tanggal_lahir" type="date" name="Tanggal_lahir" placeholder="hh-bb-tttt" required>
+                            </div>
+                        </li>
+                    </ul>
+                    <h4>Informasi Kontak</h4>
+                    <ul>
+                        <li>
+                            <label for="Alamat">Alamat Lengkap   :   </label>
+                            <div>
+                                <textarea name="Alamat" rows="5" cols="30" required></textarea>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="Phone">No. Hp   :   </label>
+                            <div>
+                                <input id="Phone" type="number" name="Phone" required>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="Email">Email   :   </label>
+                            <div>
+                                <input id="Email" type="email" name="Email" required>
+                            </div>
+                        </li>
+                    </ul>
+                    <h4>Informasi Kelas</h4>
+                    <ul>
+                        <li>
+                            <label for="k">Pilih Kelas  :   </label>
+                            <div>
+                                <select name="k" required>
+                                    <option value="">--Pilih--</option>
+                                    <option value="Weekdays">Weekdays</option>
+                                    <option value="Weekends">Weekends</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="s">Pilih Kursus  :   </label>
+                            <div>
+                                <input type="checkbox" id="Musik" name="Musik">
+                                <label for="Musik">Musik</label>
+                                <input type="checkbox" id="Desain" name="Desain">
+                                <label for="Desain">Desain</label>
+                                <input type="checkbox" id="Baking" name="Baking">
+                                <label for="Baking">Baking</label>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="p">Pilih Pembayaran    :   </label>
+                            <div>
+                                <select name="p" required>
+                                    <option value="">--Pilih--</option>
+                                    <option value="Tunai">Tunai Alfamart</option>
+                                    <option value="Ewallet">OVO/DANA/GOPAY</option>
+                                    <option value="transfer">Transfer Bank</option>
+                                </select>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div style="text-align: center;">
+                    <input type="submit" value="Submit Registrasi" name="submit">
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>
